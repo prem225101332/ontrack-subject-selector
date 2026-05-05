@@ -60,7 +60,7 @@ class SubjectSelectorTest {
     @DisplayName("Task titles and statuses are correctly loaded")
     void taskDetailsAreCorrect() {
         Task first = selector.selectSubject("s001", "SIT707").get(0);
-        assertEquals("Hello World", first.getTitle());
+        assertEquals("Evidence week1 Learning", first.getTitle());
         assertEquals(Task.Status.NOT_STARTED, first.getStatus());
     }
 
